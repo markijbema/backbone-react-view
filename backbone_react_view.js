@@ -3,5 +3,5 @@ class window.BackboneReactView extends Backbone.View
   initialize: (options) ->
     throw "You haven't defined component, silly developer" unless options.component
     @on 'show', ->
-      React.renderComponent(@options.component, @el)
+      React.renderComponent(options.component, @el)
 
