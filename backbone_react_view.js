@@ -5,3 +5,7 @@ class window.BackboneReactView extends Backbone.View
     @on 'show', ->
       React.renderComponent(options.component, @el)
 
+  remove: ->
+    React.unmountComponentAtNode(@el)
+
+    super
